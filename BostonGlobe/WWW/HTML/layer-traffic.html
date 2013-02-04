@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+        #map_canvas
+        {
+            height: {{webviewsize}}px;
+        }
+    </style>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Google Maps</title>
+    <link href="/maps/documentation/javascript/examples/default.css" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script>
+      function initialize()
+        {
+            var myLatlng = new google.maps.LatLng({{Latitude}}, {{Longitude}});
+            var mapOptions =
+            {
+                zoom: 12,
+                center: myLatlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            }
+
+            var map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
+            var trafficLayer = new google.maps.TrafficLayer();
+            trafficLayer.setMap(map);
+            
+            var myMarkerPosition = {
+                position: myLatlng,
+                map: map
+            };
+            
+            var marker = new google.maps.Marker(myMarkerPosition);
+      }
+    </script>
+  </head>
+  <body onload="initialize()">
+    <div id="map_canvas"></div>
+  </body>
+</html>

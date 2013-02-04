@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta content="charset=utf-8">
+            <title>Slider Example</title>
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+                <link rel="stylesheet" href="article.css" type="text/css" media="screen" />
+                <script src="modernizr.js"></script>
+                </head>
+    <body>
+        <div id="container" class="cf">
+            
+            <div id="main" role="main">
+                <section>
+                    <a class="articleBody" href="http://toggleChrome" onclick="showChrome">
+                    <div id="topMargin">
+                    </div>
+                    <div class="kicker">
+                        {{kickerText}}
+                    </div>
+                    <div class="storyHeadline">
+                        {{headline}}
+                    </div>
+                    <div id="byline-Author" class="byline">
+                        {{author}}
+                    </div>
+                    <div style="display:inline" id="byline-AuthorJobTitle" class="byline">{{authorJob}}</div>
+                    <div style="display:inline" id="byline-Divider" class="byline">|</div>
+                    <div style="display:inline" id="byline-DateTime" class="byline">{{timeStamp}}</div><div style="display:inline" id="byline-DateTimeSuffix" class="byline">{{timeStampSuffix}}</div>
+                    <div style="display:inline" id="byline-Date" class="byline">{{dateStamp}}</div>
+                    <div class="storyContents">
+                        <!-- INSERT ARTICLE CONTENTS HERE -->
+                    </div>
+                    </a>
+                    <a href="http://goBack" onclick="goBack">
+                        <img class="ArticleEndGlyph" width="35" src="masthead_BostonGlobe_logo_default@2x.png" />
+                    </a>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

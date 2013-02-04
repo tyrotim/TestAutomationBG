@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sections</key>
+	<dict>
+		<key>Section1</key>
+		<dict>
+			<key>Name</key>
+			<string>News</string>
+			<key>Identifier</key>
+			<string>150001700</string>
+		</dict>
+		<key>Section2</key>
+		<dict>
+			<key>Name</key>
+			<string>Metro</string>
+			<key>Identifier</key>
+			<string>150001000</string>
+		</dict>
+		<key>Section3</key>
+		<dict>
+			<key>Name</key>
+			<string>Arts</string>
+			<key>Identifier</key>
+			<string>150001300</string>
+		</dict>
+		<key>Section4</key>
+		<dict>
+			<key>Name</key>
+			<string>Business</string>
+			<key>Identifier</key>
+			<string>150001200</string>
+		</dict>
+		<key>Section5</key>
+		<dict>
+			<key>Name</key>
+			<string>Sports</string>
+			<key>Identifier</key>
+			<string>150001400</string>
+		</dict>
+		<key>Section6</key>
+		<dict>
+			<key>Name</key>
+			<string>Opinion</string>
+			<key>Identifier</key>
+			<string>150000000</string>
+		</dict>
+		<key>Section7</key>
+		<dict>
+			<key>Name</key>
+			<string>Lifestyle</string>
+			<key>Identifier</key>
+			<string>150001600</string>
+		</dict>
+		<key>Section8</key>
+		<dict>
+			<key>Name</key>
+			<string>Magazine</string>
+			<key>Identifier</key>
+			<string>150001500</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

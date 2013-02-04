@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta content="charset=utf-8">
+            <title>Slider Example</title>
+            <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+                <link rel="stylesheet" href="article.css" type="text/css" media="screen" />
+                <script src="modernizr.js"></script>
+    </head>
+    <body style="font-size:32pt; font-family:BentonSans,sans-serif">
+        
+        <!-- jQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        
+        <!-- FlexSlider -->
+        <script defer src="jquery.flexslider-min.js"></script>
+        
+        <script type="text/javascript">
+            
+            $(window).load(function(){
+                           $('.flexslider').flexslider({
+                                                       animation: "slide",
+                                                       slideshowSpeed: 500,
+                                                       animationSpeed: 500,
+                                                       });
+                           });
+            </script>
+        
+        <!-- Optional FlexSlider Additions -->
+        <script src="jquery.easing.js"></script>
+        <script src="jquery.mousewheel.js"></script>
+        <script>
+            var sendToApp = function(_key, _val) {
+                var iframe = document.createElement("IFRAME");
+                iframe.setAttribute("src", _key + ":##sendToApp##" + _val);
+                document.documentElement.appendChild(iframe);
+                iframe.parentNode.removeChild(iframe);
+                iframe = null; 
+            };
+        </script>
+        <script>
+            var loadImage = function(_imgIndex) {
+                sendToApp("LoadImage",_imgIndex);
+            };
+        </script>
+        <div id="container" class="cf">
+            
+            <div id="main" role="main">
+                <section class="slider">
+                    <div id="slider" class="flexslider">
+                        <ul class="slides">
+                            <!-- INSERT IMAGES HERE -->
+                        </ul>
+                    </div>
+                </section>
+                <section>
+                    <div class="photoCredit">
+                        {{photoCredit}}
+                    </div>
+                    <a class="articleBody" href="http://toggleChrome" onclick="showChrome">
+                    <div class="kicker">
+                        {{kickerText}}
+                    </div>
+                    <div class="storyHeadline">
+                        {{headline}}
+                    </div>
+                    <div id="byline-Author" class="byline">
+                        {{author}}
+                    </div>
+                    <div id="byline-AuthorCompany" class="byline">
+                        {{authorCompany}} | {{timeStamp}}
+                    </div>
+                    <div class="storyContents">
+                        <!-- INSERT ARTICLE CONTENTS HERE -->
+                    </div>
+                    </a>
+                    <br>
+                    <a href="http://goBack" onclick="goBack">
+                        <img class="ArticleEndGlyph" src="BostonGlobeB.png" />
+                    </a>
+                    <br>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>
